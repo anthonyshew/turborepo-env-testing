@@ -2,6 +2,8 @@ import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
 
+console.log(process.env.NODE_ENV);
+
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
   srcDark: string;
